@@ -2,14 +2,27 @@ plugins {
     id 'com.android.library'
 }
 
+// 版本号
+def _versionCode = 4
+// 版本名
+def _versionName = "0.0.4"
+// jar名
+def _jarName = "utils"
+
+
+// 生成目标地址
+def _destinationPath = "jar"
+// gradle目标地址
+def zipFile = file('build/intermediates/runtime_library_classes_jar/release/classes.jar')
+
 android {
     compileSdk 31
 
     defaultConfig {
         minSdk 21
         targetSdk 31
-        versionCode 1
-        versionName "1.0.0"
+        versionCode _versionCode
+        versionName _versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
@@ -29,6 +42,10 @@ android {
 
     viewBinding {
         enabled = true
+    }
+
+    lintOptions {
+        abortOnError false
     }
 
 }
@@ -54,3 +71,19 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.12.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 }
+
+
+
+
+task deleteBuild(type:Delete){
+    delete _destinationPath + _jarName + "_v" + _versionName + ".jar"
+}
+
+task makeJar(type:Jar){
+    from zipTree(zipFile)
+    from fileTree(dir:'src/main',includes:['assets/**'])
+    baseName = _jarName + "_v" + _versionName
+    destinationDir = file(_destinationPath)
+}
+
+makeJar.dependsOn(deleteBuild, build)

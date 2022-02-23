@@ -1,3 +1,9 @@
+自用Android工具类
+=====
+第版本4
+
+
+
 适配器
 ------
 BaseAdapter
@@ -31,7 +37,17 @@ BaseDialog
 -----
 1. 导入
 ```java
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
 
+
+        dependencies {
+        implementation 'com.github.pikachu0621:MyUtils:0.0.4'
+        }
 
 ```
 
@@ -41,8 +57,6 @@ BaseDialog
         enabled = true
     }
 ```
-
-
 
 
 
