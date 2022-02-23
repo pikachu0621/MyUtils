@@ -1,7 +1,7 @@
 自用Android工具类
 =====
 第版本4
-
+[![](https://jitpack.io/v/pikachu0621/MyUtils.svg)](https://jitpack.io/#pikachu0621/MyUtils)
 
 
 适配器
