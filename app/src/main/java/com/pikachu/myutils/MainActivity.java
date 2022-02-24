@@ -3,12 +3,20 @@ package com.pikachu.myutils;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+import com.pikachu.myutils.databinding.ActivityMainBinding;
+import com.pikachu.utils.base.BaseActivity;
+import com.pikachu.utils.base.BaseDialog;
+
+public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected void initActivity(Bundle savedInstanceState) {
+        // 业务逻辑
+        // binding.getRoot().setVisibility(View.VISIBLE);
+
+
+
     }
 }
