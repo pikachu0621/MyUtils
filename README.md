@@ -32,13 +32,13 @@
 
 工具类
 -------
-> Activity堆栈管理
+> Activity堆栈管理工具类
 `AppManagerUtils` <br>
 
-> Assets文件管理
+> Assets文件管理工具类
 `AssetsUtils` <br>
 
-> Base64工具
+> Base64工具类
 `Base64Utils` <br>
 
 > bitmap图片工具类
