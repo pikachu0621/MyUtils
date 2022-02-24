@@ -19,14 +19,14 @@
 
 基类
 ------
->Activity
+>Activity <br>
 `BaseActivity` <br>
-> Fragment
+> Fragment <br>
 `BaseFragment` <br>
-> 对话框
+> 对话框 <br>
 `BaseDialog` <br>
 `BaseBottomSheetDialog` <br>
-`BasePopupWindow`
+`BasePopupWindow` <br>
 
 工具类
 -------
