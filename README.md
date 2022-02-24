@@ -10,54 +10,54 @@
 适配器
 ------
 >RecyclerView 适配器 
-`BaseAdapter`
+`BaseAdapter` <br>
 `QuickAdapter`
 
 >PagerView 适配器
-`PagerAdapter`
+`PagerAdapter` <br>
 `PagerAdapter2`
 
 基类
 ------
 >Activity
-`BaseActivity`
+`BaseActivity` <br>
 > Fragment
-`BaseFragment`
+`BaseFragment` <br>
 > 对话框
-`BaseDialog`
-`BaseBottomSheetDialog`
+`BaseDialog` <br>
+`BaseBottomSheetDialog` <br>
 `BasePopupWindow`
 
 工具类
 -------
 > Activity堆栈管理
-`AppManagerUtils`
+`AppManagerUtils` <br>
 > Assets文件管理
-`AssetsUtils`
+`AssetsUtils` <br>
 > Base64工具
-`Base64Utils`
+`Base64Utils` <br>
 > bitmap图片工具类
-`BitmapUtils`
+`BitmapUtils` <br>
 > 设备工具信息工具
-`EquipmentUtils`
+`EquipmentUtils` <br>
 > 文件工具类
-`FileUtils`
+`FileUtils` <br>
 > glide图片加载工具类
-`GlideUtils`
+`GlideUtils` <br>
 > 系统http工具类
-`LoadUrlUtils`
+`LoadUrlUtils` <br>
 > log日志工具类
-`LogsUtils`
+`LogsUtils` <br>
 > 网络检测工具类
-`NetUtils`
+`NetUtils` <br>
 > SharedPreferences本地xml储存工具类
-`SharedPreferencesUtils`
+`SharedPreferencesUtils` <br>
 > 时间工具类
-`TimeUtils`
+`TimeUtils` <br>
 > Toast工具类
-`ToastUtils`
+`ToastUtils` <br>
 > Ui相关工具类
-`UiUtils`
+`UiUtils` <br>
 
 
 使用
